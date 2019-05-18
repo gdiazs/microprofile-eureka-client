@@ -18,5 +18,6 @@ public @interface EurekaService {
 
 	@Nonbinding
 	String endpoint() default "";
+	
 
 }
