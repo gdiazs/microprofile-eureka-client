@@ -6,7 +6,13 @@ Using this library you can connect clients with Eureka Discovery Server using Mi
 ## Create a MicroProfile microservice
 https://start.microprofile.io/
 
-Compile this project and add to the MP project POM the next dependency:
+Compile this project
+
+```bash
+mvn clean install
+```
+
+ Add to the Microprofile Project POM the next dependency:
 
  ```xml
   <dependency>
@@ -18,7 +24,7 @@ Compile this project and add to the MP project POM the next dependency:
 
 In the resource folder add the file  [**eureka-client.properties** ](https://github.com/Netflix/eureka/blob/master/eureka-server/src/main/resources/eureka-client.properties)
 
-Once your eureka server it´s up you should add in your JAX-RS endpoint the reference to the service and endpoint
+Once your eureka server it's up you should add in your JAX-RS endpoint the reference to the service and endpoint
 
 ```java
 @Path("/hello")
